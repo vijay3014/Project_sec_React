@@ -13,29 +13,67 @@ import {
   MDBIcon,
   MDBInputGroup,
 } from "mdb-react-ui-kit";
+import { CiHeart } from "react-icons/ci";
+import { FiUser } from "react-icons/fi";
+import { BsCart3 } from "react-icons/bs";
 
 export default function App() {
   const [openNavNoTogglerThird, setOpenNavNoTogglerThird] = useState(false);
 
   return (
     <>
-      <MDBNavbar className="bg-black text-white py-2 text-sm font-semibold">
-        <MDBContainer fluid className="px-4 lg:px-20">
-          <div className="flex flex-col lg:flex-row justify-between items-center">
-            <ul className="flex space-x-4 lg:space-x-6">
-              <li><a href="" className="hover:text-gray-300">English</a></li>
-              <li><a href="" className="hover:text-gray-300">USD</a></li>
-              <li><a href="" className="hover:text-gray-300">Free Shipping On All Orders Over $100</a></li>
-            </ul>
-            <ul className="flex space-x-4 lg:space-x-5 mt-2 lg:mt-0">
-              <li className="text-[#FCC904] space-x-2 flex items-center"><i className="fa-solid fa-bolt-lightning"></i><a href="" className="hover:text-gray-300">Flash Sale</a></li>
-              <li><a href="" className="hover:text-gray-300">Track Order</a></li>
-              <li><a href="" className="hover:text-gray-300">About</a></li>
-              <li><a href="" className="hover:text-gray-300">Contact</a></li>
-              <li><a href="" className="hover:text-gray-300">Blog</a></li>
-            </ul>
+      <MDBNavbar className="fixed w-full z-50">
+        <MDBNavbarNav>
+          <div className="bg-black w-full py-2 text-sm font-semibold">
+            <nav className="flex justify-between items-center px-4 md:px-16">
+              <ul className="flex items-center space-x-4 md:space-x-6">
+                <li>
+                  <a href="" className="text-white">
+                    English
+                  </a>
+                </li>
+                <li>
+                  <a href="" className="text-white">
+                    USD
+                  </a>
+                </li>
+                <li>
+                  <a href="" className="text-white">
+                    Free Shipping On All Orders Over $100
+                  </a>
+                </li>
+              </ul>
+              <ul className="flex items-center space-x-4 md:space-x-6">
+                <li className="text-[#FCC904] flex items-center space-x-2">
+                  <i className="fa-solid fa-bolt-lightning"></i>
+                  <a href="" className="text-[#FCC904]">
+                    Flash Sale
+                  </a>
+                </li>
+                <li>
+                  <a href="" className="text-white">
+                    Track Order
+                  </a>
+                </li>
+                <li>
+                  <a href="" className="text-white">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="" className="text-white">
+                    Contact
+                  </a>
+                </li>
+                <li>
+                  <a href="" className="text-white">
+                    Blog
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
-        </MDBContainer>
+        </MDBNavbarNav>
       </MDBNavbar>
       <MDBNavbar expand="lg" light bgColor="light">
         <MDBContainer className="py-3">
@@ -50,17 +88,17 @@ export default function App() {
             <MDBIcon icon="bars" fas />
           </MDBNavbarToggler>
           <MDBNavbarBrand href="#">
-            <img src={logo} className="h-12 w-48" alt="Logo" />
+            <img src={logo} className="h-12 w-48" alt="Logo"></img>
           </MDBNavbarBrand>
           <MDBCollapse navbar show={openNavNoTogglerThird}>
-            <MDBNavbarNav className="w-full">
-              <MDBInputGroup tag="form" className="d-flex w-full py-3">
+            <MDBNavbarNav className="mr-auto mb-2 mb-lg-0 w-full">
+              <MDBInputGroup tag="form" className="d-flex w-auto py-3">
                 <div className="flex-grow">
-                  <div className="flex items-center rounded-lg shadow-md overflow-hidden border-[#0068C8] border-2 bg-gray-100">
+                  <div className="flex items-center rounded-lg shadow-md overflow-hidden w-full md:w-[710px] border-[#0068C8] border-2 bg-gray-100">
                     <select
                       name=""
                       id=""
-                      className="h-full px-7 py-[12px] bg-gray-100 text-gray-700 focus:outline-none"
+                      className="h-full px-4 md:px-7 py-[12px] bg-gray-100 text-gray-700 focus:outline-none"
                     >
                       <option className="">All Categories</option>
                       <option>Camera</option>
@@ -107,34 +145,42 @@ export default function App() {
                       className="w-full px-4 py-2 bg-gray-100 text-gray-700 focus:outline-none"
                       placeholder="Search for products"
                     />
-                    <MDBBtn className="bg-[#0068c8] h-12 w-36 px-[30px]"><span className="text-[16px]">SEARCH</span></MDBBtn>
+                    <button className="bg-[#0068C8] h-12 w-24 md:w-36 text-[14px] md:text-[16px] text-white font-semibold">
+                      SEARCH
+                    </button>
                   </div>
                 </div>
               </MDBInputGroup>
-              <div className="d-flex justify-center lg:justify-start items-center pl-0 lg:pl-[5%] mt-4 lg:mt-0">
+              <div className="d-flex align-items-center justify-center md:justify-end w-full md:w-auto mt-2 md:mt-0">
                 <MDBNavbarItem className="d-flex align-items-center space-x-7">
                   <MDBNavbarLink href="#">
-                    <i className="fa-regular fa-heart text-2xl lg:text-3xl relative text-black">
+                    <i className="text-4xl relative text-black">
+                      <CiHeart />
                       <span className="bg-[#0068C8] h-4 w-4 text-white text-[10px] rounded-full flex justify-center items-center absolute top-[-1px] right-[-6px] z-20 text-center">
                         0
                       </span>
                     </i>
                   </MDBNavbarLink>
                   <MDBNavbarLink href="#" className="d-flex align-items-center">
-                    <i className="fa-regular fa-user text-2xl lg:text-3xl text-black"></i>
+                    <i className="text-4xl text-black">
+                      <FiUser />
+                    </i>
                     <div className="flex flex-col ml-2">
-                      <span className="text-[#848484] text-[10px] lg:text-[12px]">My Account</span>
+                      <span className="text-[#848484] text-[12px]">
+                        My Account
+                      </span>
                       <span className="text-sm font-bold text-black">Login</span>
                     </div>
                   </MDBNavbarLink>
                   <MDBNavbarLink href="#" className="d-flex align-items-center">
-                    <i className="fa-solid fa-cart-shopping text-2xl lg:text-3xl relative text-black">
+                    <i className="text-4xl relative text-black">
+                      <BsCart3 />
                       <span className="bg-[#0068C8] h-4 w-4 text-white text-[10px] rounded-full flex justify-center items-center absolute top-[-1px] right-[-6px] z-20 text-center">
                         0
                       </span>
                     </i>
                     <div className="flex flex-col ml-2">
-                      <span className="text-[#848484] text-[10px] lg:text-[12px]">My Cart</span>
+                      <span className="text-[#848484] text-[12px]">My Cart</span>
                       <span className="text-sm font-bold text-black">$0.00</span>
                     </div>
                   </MDBNavbarLink>

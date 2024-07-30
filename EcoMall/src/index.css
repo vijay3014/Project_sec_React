@@ -2,10 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-
-*{
-  font-family: "Mulish", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
