@@ -24,7 +24,7 @@ export default function App() {
     <>
       <MDBNavbar className="fixed w-full z-50">
         <MDBNavbarNav>
-          <div className="bg-black w-full py-2 text-sm font-semibold">
+          <div className="bg-black w-full mt-[-0.5%] py-2.5 text-sm font-semibold">
             <nav className="flex justify-between items-center px-4 md:px-16">
               <ul className="flex items-center space-x-4 md:space-x-6">
                 <li>
@@ -34,7 +34,7 @@ export default function App() {
                 </li>
                 <li>
                   <a href="" className="text-white">
-                    USD
+                    USD 
                   </a>
                 </li>
                 <li>
@@ -151,7 +151,7 @@ export default function App() {
                   </div>
                 </div>
               </MDBInputGroup>
-              <div className="d-flex align-items-center justify-center md:justify-end w-full md:w-auto mt-2 md:mt-0">
+              <div className="d-flex align-items-center justify-center md:justify-end w-full md:w-auto mt-2 md:mt-0 pl-[5%]">
                 <MDBNavbarItem className="d-flex align-items-center space-x-7">
                   <MDBNavbarLink href="#">
                     <i className="text-4xl relative text-black">
