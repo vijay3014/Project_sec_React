@@ -3,6 +3,7 @@ import Home from './Home'
 import Error from './Error'
 import RegisterPage from './RegisterPage'
 import OT from './OT'
+import About from './About'
 
 const Layout = () => {
   return (
@@ -11,6 +12,7 @@ const Layout = () => {
         <Error/>
         <RegisterPage/>
         <OT/>
+        <About/>
     </div>
   )
 }
