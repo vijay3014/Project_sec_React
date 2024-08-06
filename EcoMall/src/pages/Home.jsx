@@ -239,7 +239,7 @@ const Home = () => {
         <div className="flex justify-between items-start">
           <div className="flex-2">
             {/* left Side Card */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-3 gap-3">
               <div className="w-[300px]">
                 <div className=" mt-10 ml-10 mb-10 mr-10 hover:border-1 w-[200px] h-[210px] hover:border-[#0068C8] transition duration-300 rounded-lg flex justify-center items-center">
                   <a href="" className="relative">
@@ -333,7 +333,10 @@ const Home = () => {
                 </div>
               </div>
             </div>
-
+            {/* middle Banner */}
+             <div className="h-screen inline-flex items-center justify-center">
+              <img src={banner} alt="Banner" className="w-full h-auto" />
+            </div>
             {/* Right Side Card */}
             <div className="">
               <div className="grid grid-cols-2 gap-4">
@@ -435,10 +438,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-        {/* middle Banner */}
-        <div className="h-screen inline-flex items-center justify-center">
-              <img src={banner} alt="Banner" className="w-full h-auto" />
-            </div>
 
       <div className="mt-24 mb-5">
         <div>
