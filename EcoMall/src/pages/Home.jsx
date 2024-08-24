@@ -115,7 +115,7 @@ const Home = () => {
         </div>
       </div>
       <div className="mt-5 flex justify-center items-center">
-      <Company/>
+      {/* <Company/> */}
       </div>
 
       {/* Deal Of The Day */}
@@ -124,7 +124,7 @@ const Home = () => {
           <h2 className="text-black font-bold ">Deals of the day</h2>
           <hr className="w-full lg:w-full"/>
           <div className="flex justify-center mt-4">
-            <DealOfTheDay/>
+            {/* <DealOfTheDay/> */}
             <div className="flex space-x-2">
               <span className="bg-gray-500 h-2 w-2 rounded-full"></span>
               <span className="bg-gray-300 h-2 w-2 rounded-full"></span>
