@@ -45,7 +45,7 @@ const SL = () => {
               </select>
             </div>
           </div>
-          <ProductOverviewTwo/>
+          <ProductOverviewTwo />
         </div>
       </div>
     </div>
