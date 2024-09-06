@@ -17,9 +17,9 @@ const About = () => {
 
   const teamMembers = [
   {
-    name: "Dhaval Solanki",
+    name: "Vijay Solanki",
     position: "CEO & Founder",
-    imgSrc: dhaval
+    imgSrc: vijay
   },
   {
     name: "Darashan Chauhan",
@@ -27,9 +27,9 @@ const About = () => {
     imgSrc: darshan
   },
   {
-    name: "Vijay Solanki",
-    position: "Head Engineer",
-    imgSrc: vijay
+    name: "Dhaval Solanki",
+    position: "Head engineer",
+    imgSrc: dhaval
   },
   {
     name: "Vrishabh Jogani",
